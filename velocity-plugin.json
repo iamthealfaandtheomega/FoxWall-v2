@@ -1,0 +1,12 @@
+{
+  "id": "foxwall",
+  "name": "FoxWall",
+  "version": "1.0.0",
+  "description": "Protects your backend from being scanned and/or joinable (BungeeGuard and Velocity Modern alternative).",
+  "url": "https://discord.zowi.gay/",
+  "authors": [
+    "NovaCraft254"
+  ],
+  "dependencies": [],
+  "main": "thezowi.foxwall.boostrap.FoxVelocity"
+}

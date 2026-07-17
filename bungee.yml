@@ -1,0 +1,7 @@
+name: FoxWall
+description: Protects your backend from being scanned and/or joinable (BungeeGuard and Velocity Modern alternative).
+version: '1.0.0'
+main: thezowi.foxwall.boostrap.FoxBungee
+author: NovaCraft254
+depends: []
+softDepends: []

@@ -1,0 +1,37 @@
+name: FoxWall
+prefix: FW
+main: thezowi.foxwall.boostrap.FoxBukkit
+author: NovaCraft254
+version: '1.0.0'
+api-version: 1.13
+description: Protects your backend from being scanned and/or joinable (BungeeGuard and Velocity Modern alternative).
+load: POSTWORLD
+website: https://discord.zowi.gay/
+folia-supported: true
+database: false
+softdepend:
+- ProtocolLib
+- packetevents
+
+permissions:
+  foxwall.command.*:
+    description: Give access to all commands.
+    default: op
+    children:
+      foxwall.command.debug: true
+      foxwall.command.reload: true
+      foxwall.command.update: true
+  foxwall.command.debug:
+    description: Access to 'debug' command.
+    default: false
+  foxwall.command.reload:
+    description: Access to 'reload' command.
+    default: false
+  foxwall.command.update:
+    description: Access to 'update' command.
+    default: false
+commands:
+  foxwall:
+    description: View list of commands in FoxWall.
+    aliases: ["fw", "foxw"]
+    usage: "/<command> [debug|reload|update]"
